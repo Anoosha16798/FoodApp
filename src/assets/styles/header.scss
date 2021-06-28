@@ -1,0 +1,92 @@
+.header-container{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-content: center;
+    background-color: #181818;
+    filter: blur();
+    position:fixed;
+    z-index: 999;
+    align-items: center;
+    padding: 12px;
+    width:100%;
+    a, li, ul{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+
+    }
+    .menu-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:0vh 10vw 0vh 0vw;
+        .categories{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 600;
+            opacity: 0.7;   
+            
+            .sub-items{
+                display:flex;
+                flex-direction: column;
+                border:1px solid gray;
+                background-color: black;
+                opacity: 0.6;
+                position: fixed;
+                padding: 2vh 4vw 2vh 1vw;
+                margin: 2vh 0vw;
+                .sub-categories{
+                    padding:1vh 0;
+                }
+                .sub-categories:hover{
+                    font-size: 1.4em;
+                }
+            }
+            .search-bar{
+                display: grid;
+                grid-template-columns: 30% 70%;
+                border:1px solid gray;
+                background-color: white;
+                border-radius: 15px;
+                opacity: 0.8;
+                position: fixed;
+                left:35%;
+                padding: 0vh 4vw 0vh 1vw;
+                margin: 5vh 0vw;
+
+                img{
+                    width:25%;
+                }
+            }
+            .no-items{
+                display:none;
+            }      
+        }    
+        img{
+            width:5%;
+        }   
+    }
+    .img-x{
+        align-self: center;
+        justify-self: self-end;
+        img{
+  
+        width:20%;
+        object-fit: contain;
+        border:1px solid transparent;
+        border-radius: 50%;
+        }
+    }
+    .img-x-logo{
+        justify-self: self-end;
+        img{
+            
+        margin-left: 20%;
+        width:20%;
+        object-fit: contain;
+        border:1px solid transparent;
+        border-radius: 50%;
+        }
+    }
+}
